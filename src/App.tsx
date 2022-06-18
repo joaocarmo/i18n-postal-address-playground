@@ -1,0 +1,46 @@
+import logo from './data/logo.svg'
+import './App.css'
+import { StoreProvider } from './store'
+import Fields from './components/Fields'
+import Options from './components/Options'
+import Results from './components/Results'
+import pkg from '../package.json'
+
+const App = () => (
+  <StoreProvider>
+    <div className="app">
+      <header className="app-header">
+        <img src={logo} className="app-logo" alt="logo" />
+        <h3>i18n-postal-address playground</h3>
+      </header>
+      <main className="app-main">
+        <Fields />
+        <div className="main-results">
+          <h4>Options</h4>
+          <Options />
+          <h4>Output</h4>
+          <Results />
+        </div>
+      </main>
+      <footer className="app-footer">
+        <p>
+          Made with{' '}
+          <span role="img" aria-label="love">
+            ❤️
+          </span>{' '}
+          by{' '}
+          <a
+            href={pkg.author.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="app-link"
+          >
+            {`@${pkg.author.name}`}
+          </a>
+        </p>
+      </footer>
+    </div>
+  </StoreProvider>
+)
+
+export default App

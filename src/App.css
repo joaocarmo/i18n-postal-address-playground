@@ -1,0 +1,108 @@
+.app {
+  text-align: center;
+  background-color: #283430;
+}
+
+.app-logo {
+  height: 5vmin;
+  pointer-events: none;
+}
+
+.app-link {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.app-header {
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+}
+
+.app-footer {
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.app-main {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: calc(10px + 1vmin);
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1vmax;
+  max-width: 1440px;
+}
+
+.main-fields {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 1vmax;
+}
+
+.main-fiels-field {
+  margin: 0.1em;
+}
+
+.main-fiels-field label,
+.main-options label {
+  margin-right: 0.5em;
+}
+
+.main-options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 0.5em;
+  justify-content: space-between;
+}
+
+.main-results {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1vmax;
+}
+
+.main-results h4 {
+  margin: 0 0 0.5em 0;
+}
+
+.main-results-textarea {
+  height: 20vmax;
+  width: 100%;
+}
+
+select {
+  max-width: 192px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: app-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

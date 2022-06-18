@@ -1,0 +1,45 @@
+{
+  "name": "i18n-postal-address-playground",
+  "description": "Playground for i18n-postal-address",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://joaocarmo.github.io/i18n-postal-address-playground",
+  "author": {
+    "name": "joaocarmo",
+    "url": "https://joaocarmo.com"
+  },
+  "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.0",
+    "i18n-postal-address": "^0.6.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

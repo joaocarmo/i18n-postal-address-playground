@@ -17,6 +17,10 @@ const Results = () => {
       return JSON.stringify(postalAddress.toArray(), null, 2)
     }
 
+    if (output === 'object') {
+      return JSON.stringify(postalAddress.toObject(), null, 2)
+    }
+
     if (output === 'string') {
       return postalAddress.toString()
     }

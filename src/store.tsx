@@ -7,7 +7,7 @@ const allowedFields = Object.keys(defaultState) as AddressParts[]
 
 type StateOptions = {
   country: string
-  output: 'array' | 'string'
+  output: 'array' | 'object' | 'string'
   type: 'business' | 'default' | 'english' | 'french' | 'personal'
   useTransforms: boolean
 }

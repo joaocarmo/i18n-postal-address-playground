@@ -1,6 +1,6 @@
 .app {
-  text-align: center;
   background-color: #283430;
+  text-align: center;
 }
 
 .app-logo {
@@ -8,15 +8,18 @@
   pointer-events: none;
 }
 
-.app-link {
+a {
   color: #61dafb;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .app-header {
   align-items: center;
   background-color: #282c34;
-  color: white;
   display: flex;
   flex-direction: row;
   font-size: calc(10px + 2vmin);
@@ -26,7 +29,6 @@
 .app-footer {
   align-items: center;
   background-color: #282c34;
-  color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -34,22 +36,26 @@
 
 .app-main {
   align-items: center;
-  color: white;
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
   font-size: calc(10px + 1vmin);
   justify-content: center;
-  align-items: flex-start;
-  padding: 1vmax;
   max-width: 1440px;
+  padding: 1vmax;
+}
+
+.main-about {
+  margin-bottom: 1em;
+  text-align: left;
 }
 
 .main-fields {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
   padding: 1vmax;
 }
 
@@ -66,16 +72,16 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 0.5em;
   justify-content: space-between;
+  margin-bottom: 1em;
 }
 
 .main-results {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
   padding: 1vmax;
 }
 

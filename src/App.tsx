@@ -16,6 +16,18 @@ const App = () => (
       <main className="app-main">
         <Fields />
         <div className="main-results">
+          <h4>About</h4>
+          <section className="main-about">
+            Feel free to play around with this interactive playground for the{' '}
+            <a
+              href="https://github.com/joaocarmo/i18n-postal-address"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              i18n-postal-address
+            </a>{' '}
+            JavaScript library.
+          </section>
           <h4>Options</h4>
           <Options />
           <h4>Output</h4>
@@ -29,12 +41,7 @@ const App = () => (
             ❤️
           </span>{' '}
           by{' '}
-          <a
-            href={pkg.author.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="app-link"
-          >
+          <a href={pkg.author.url} target="_blank" rel="noopener noreferrer">
             {`@${pkg.author.name}`}
           </a>
         </p>

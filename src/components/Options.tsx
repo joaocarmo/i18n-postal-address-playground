@@ -26,6 +26,11 @@ const outputOptions = [
     value: 'array',
   },
   {
+    key: 'object',
+    label: 'Object',
+    value: 'object',
+  },
+  {
     key: 'string',
     label: 'String',
     value: 'string',

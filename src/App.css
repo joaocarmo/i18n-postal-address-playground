@@ -1,5 +1,9 @@
 .app {
+  align-items: center;
   background-color: #283430;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   text-align: center;
 }
 
@@ -24,6 +28,7 @@ a:hover {
   flex-direction: row;
   font-size: calc(10px + 2vmin);
   justify-content: center;
+  width: 100%;
 }
 
 .app-footer {
@@ -32,10 +37,18 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 100%;
 }
 
 .app-main {
-  align-items: center;
+  flex: 1;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.app-main-content {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
@@ -54,7 +67,7 @@ a:hover {
   align-items: flex-end;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 3;
   justify-content: flex-start;
   padding: 1vmax;
 }
@@ -80,7 +93,7 @@ a:hover {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 5;
   justify-content: flex-start;
   padding: 1vmax;
 }

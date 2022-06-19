@@ -1,9 +1,11 @@
 import { createContext, useContext, useMemo, useReducer } from 'react'
 import type { Dispatch, PropsWithChildren } from 'react'
 import defaultState from './data/default-state'
-import type { AddressParts, AddressObject } from './types'
+import type { PostalAddressType } from 'i18n-postal-address'
 
-const allowedFields = Object.keys(defaultState) as AddressParts[]
+const allowedFields = Object.keys(
+  defaultState,
+) as PostalAddressType.AddressParts[]
 
 type StateOptions = {
   country: string
@@ -13,12 +15,12 @@ type StateOptions = {
 }
 
 type State = {
-  fields: AddressObject
+  fields: PostalAddressType.AddressObject
   options: StateOptions
 }
 
 type ReducerAction = {
-  field?: AddressParts
+  field?: PostalAddressType.AddressParts
   option?: keyof StateOptions
   payload: unknown
   type: 'options' | 'fields'
@@ -48,7 +50,7 @@ const reducer = (state: State, action: ReducerAction) => {
 }
 
 type StoreContextType = {
-  allowedFields: AddressParts[]
+  allowedFields: PostalAddressType.AddressParts[]
   dispatch: Dispatch<ReducerAction>
   state: State
 }

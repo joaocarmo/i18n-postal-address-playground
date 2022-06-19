@@ -1,10 +1,10 @@
 import { useCallback } from 'react'
 import type { ChangeEvent } from 'react'
 import { useStore } from '../store'
-import type { AddressParts } from '../types'
+import type { PostalAddressType } from 'i18n-postal-address'
 
 type FieldProps = {
-  field: AddressParts
+  field: PostalAddressType.AddressParts
 }
 
 const Field = ({ field }: FieldProps) => {

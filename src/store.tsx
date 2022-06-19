@@ -10,7 +10,7 @@ const allowedFields = Object.keys(
 type StateOptions = {
   country: string
   output: 'array' | 'object' | 'string'
-  type: 'business' | 'default' | 'english' | 'french' | 'personal'
+  type: PostalAddressType.FormatTypes
   useTransforms: boolean
 }
 

@@ -6,6 +6,8 @@ import Options from './components/Options'
 import Results from './components/Results'
 import pkg from '../package.json'
 
+const libVersion = pkg.dependencies['i18n-postal-address']
+
 const App = () => (
   <StoreProvider>
     <div className="app">
@@ -27,7 +29,7 @@ const App = () => (
               >
                 i18n-postal-address
               </a>{' '}
-              JavaScript library.
+              JavaScript library. <code>[v{libVersion}]</code>
             </section>
             <h4>Options</h4>
             <Options />

@@ -9,7 +9,8 @@
     "url": "https://joaocarmo.com"
   },
   "scripts": {
-    "predeploy": "yarn build",
+    "preinstall": "npx only-allow pnpm",
+    "predeploy": "pnpm build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -33,7 +34,7 @@
     "@types/node": "^20.8.7",
     "@types/react": "^18.2.29",
     "@types/react-dom": "^18.2.13",
-    "i18n-postal-address": "0.8.0",
+    "i18n-postal-address": "0.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",

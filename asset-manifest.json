@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/i18n-postal-address-playground/static/css/main.6674d8fe.css",
-    "main.js": "/i18n-postal-address-playground/static/js/main.a7615021.js",
+    "main.css": "/i18n-postal-address-playground/static/css/main.7f28df75.css",
+    "main.js": "/i18n-postal-address-playground/static/js/main.f40552d8.js",
     "static/media/logo.svg": "/i18n-postal-address-playground/static/media/logo.9a8040fd08d3abd6144f98fdf62410bb.svg",
     "index.html": "/i18n-postal-address-playground/index.html",
-    "main.6674d8fe.css.map": "/i18n-postal-address-playground/static/css/main.6674d8fe.css.map",
-    "main.a7615021.js.map": "/i18n-postal-address-playground/static/js/main.a7615021.js.map"
+    "main.7f28df75.css.map": "/i18n-postal-address-playground/static/css/main.7f28df75.css.map",
+    "main.f40552d8.js.map": "/i18n-postal-address-playground/static/js/main.f40552d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.6674d8fe.css",
-    "static/js/main.a7615021.js"
+    "static/css/main.7f28df75.css",
+    "static/js/main.f40552d8.js"
   ]
 }

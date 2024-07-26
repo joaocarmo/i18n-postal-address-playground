@@ -1,5 +1,5 @@
 import { createContext, useContext, useMemo, useReducer } from 'react'
-import type { Dispatch, PropsWithChildren } from 'react'
+import type { Dispatch, FC, PropsWithChildren } from 'react'
 import defaultState from './data/default-state'
 import type { PostalAddressType } from 'i18n-postal-address'
 
@@ -72,14 +72,14 @@ const StoreContext = createContext<StoreContextType>({
 })
 StoreContext.displayName = 'StoreContext'
 
-type StoreProviderProps = PropsWithChildren<{
-  initialState: State
-}>
+interface StoreProviderProps {
+  initialState?: State
+}
 
-export const StoreProvider = ({
+export const StoreProvider: FC<PropsWithChildren<StoreProviderProps>> = ({
   children,
-  initialState,
-}: StoreProviderProps) => {
+  initialState = startstate,
+}) => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const value = useMemo(
@@ -88,10 +88,6 @@ export const StoreProvider = ({
   )
 
   return <StoreContext.Provider value={value}>{children}</StoreContext.Provider>
-}
-
-StoreProvider.defaultProps = {
-  initialState: startstate,
 }
 
 export const useStore = () => {

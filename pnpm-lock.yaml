@@ -21,8 +21,8 @@ importers:
         specifier: ^18.3.0
         version: 18.3.0
       i18n-postal-address:
-        specifier: 0.9.1
-        version: 0.9.1
+        specifier: 0.9.2
+        version: 0.9.2
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -2963,8 +2963,8 @@ packages:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
 
-  i18n-postal-address@0.9.1:
-    resolution: {integrity: sha512-W3Y5KPno6fUATAAGu5YcJlhlSWYKvctLr5UIlR+Qa+3uj9RY2rqTUKj3j+B/60HCxWdacUOLJcvZzFOorhergQ==}
+  i18n-postal-address@0.9.2:
+    resolution: {integrity: sha512-skGJIXD2HcQrbvTHAC/vzLZwT7hrdewoQNvyZpdC6Zxub0awLtiNyszAw36/J6ldiGm3rXsR6Xy0NPEutmEpeg==}
 
   iconv-lite@0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
@@ -9172,7 +9172,7 @@ snapshots:
 
   human-signals@2.1.0: {}
 
-  i18n-postal-address@0.9.1:
+  i18n-postal-address@0.9.2:
     optionalDependencies:
       node-postal: 1.2.0
 

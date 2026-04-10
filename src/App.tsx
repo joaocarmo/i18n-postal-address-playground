@@ -4,9 +4,10 @@ import { StoreProvider } from './store'
 import Fields from './components/Fields'
 import Options from './components/Options'
 import Results from './components/Results'
-import pkg from '../package.json'
 
-const libVersion = pkg.dependencies['i18n-postal-address']
+declare const __LIB_VERSION__: string
+declare const __AUTHOR_NAME__: string
+declare const __AUTHOR_URL__: string
 
 const App = () => (
   <StoreProvider>
@@ -29,7 +30,7 @@ const App = () => (
               >
                 i18n-postal-address
               </a>{' '}
-              JavaScript library. <code>[v{libVersion}]</code>
+              JavaScript library. <code>[v{__LIB_VERSION__}]</code>
             </section>
             <h4>Options</h4>
             <Options />
@@ -45,8 +46,8 @@ const App = () => (
             ❤️
           </span>{' '}
           by{' '}
-          <a href={pkg.author.url} target="_blank" rel="noopener noreferrer">
-            {`@${pkg.author.name}`}
+          <a href={__AUTHOR_URL__} target="_blank" rel="noopener noreferrer">
+            {`@${__AUTHOR_NAME__}`}
           </a>
         </p>
       </footer>

@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import PostalAddress from 'i18n-postal-address'
+import PostalAddress, { addressFormats } from 'i18n-postal-address'
 import { useStore } from '../store'
 
 const Results = () => {
@@ -10,7 +10,11 @@ const Results = () => {
   const results = useMemo(() => {
     const { country, type, output, useTransforms } = options
 
-    const postalAddress = new PostalAddress(fields)
+    const postalAddress = new PostalAddress({
+      formats: addressFormats,
+      defaultFormat: 'US',
+    })
+    postalAddress.fromObject(fields)
     postalAddress.setFormat({ country, type, useTransforms })
 
     if (output === 'array') {

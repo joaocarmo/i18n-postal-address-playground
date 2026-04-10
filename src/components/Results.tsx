@@ -12,7 +12,7 @@ const Results = () => {
 
     const postalAddress = new PostalAddress({
       formats: addressFormats,
-      defaultFormat: country,
+      defaultFormat: 'US',
     })
     postalAddress.fromObject(fields)
     postalAddress.setFormat({ country, type, useTransforms })

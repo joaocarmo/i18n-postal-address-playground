@@ -9,11 +9,6 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
     "moduleResolution": "bundler",
-    "paths": {
-      "i18n-postal-address": [
-        "./node_modules/i18n-postal-address/dist/index.d.ts"
-      ]
-    },
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,
